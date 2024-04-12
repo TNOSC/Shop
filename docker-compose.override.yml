@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  tnosc.shop.server.bootstrapper:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5080
+      - ASPNETCORE_HTTPS_PORTS=5081
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=tnosc
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/tnoscshop.pfx
+    ports:
+      - 5080:5080
+      - 5081:5081
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+  tnosc.shop.host.web:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=tnosc
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/tnoscshop.pfx
+    ports:
+      - 8080:8080
+      - 8081:8081
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro

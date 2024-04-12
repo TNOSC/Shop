@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  tnosc.shop.server.bootstrapper:
+    image: ${DOCKER_REGISTRY-}tnoscshopserverbootstrapper
+    build:
+      context: .
+      dockerfile: src/Host/Tnosc.Shop.Server.Bootstrapper/Dockerfile
+
+  tnosc.shop.host.web:
+    image: ${DOCKER_REGISTRY-}tnoscshophostweb
+    build:
+      context: .
+      dockerfile: src/Client/Tnosc.Shop.Host.Web/Tnosc.Shop.Host.Web/Dockerfile
+

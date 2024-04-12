@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="module.basket.development.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="module.basket.development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tnosc.Components.Abstractions.Module" Version="1.0.0-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Basket.Api\Tnosc.Shop.Server.Module.Basket.Api.csproj" />
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Basket.Persistence\Tnosc.Shop.Server.Module.Basket.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

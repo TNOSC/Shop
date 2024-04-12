@@ -1,0 +1,8 @@
+{
+  "identity": {
+    "module": {
+      "name": "identity",
+      "enabled": true
+    }
+  }
+}

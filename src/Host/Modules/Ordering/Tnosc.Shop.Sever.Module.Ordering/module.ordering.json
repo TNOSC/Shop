@@ -1,0 +1,8 @@
+{
+  "ordering": {
+    "module": {
+      "name": "ordering",
+      "enabled": true
+    }
+  }
+}

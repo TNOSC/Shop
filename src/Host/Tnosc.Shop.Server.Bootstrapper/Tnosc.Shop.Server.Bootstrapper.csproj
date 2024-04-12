@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3bec42a0-8ed8-49e2-9ed1-2915399640ce</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="6.5.0" />
+    <PackageReference Include="Tnosc.Framework.Module.Core" Version="1.0.0-alpha" />
+    <PackageReference Include="Tnosc.Components.Infrastructure.Module" Version="1.0.0-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Basket\Tnosc.Shop.Server.Module.Basket\Tnosc.Shop.Server.Module.Basket.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog\Tnosc.Shop.Sever.Module.Catalog.csproj" />
+    <ProjectReference Include="..\Modules\Identity\Tnosc.Shop.Sever.Module.Identity\Tnosc.Shop.Sever.Module.Identity.csproj" />
+    <ProjectReference Include="..\Modules\Notification\Tnosc.Shop.Sever.Module.Notification\Tnosc.Shop.Sever.Module.Notification.csproj" />
+    <ProjectReference Include="..\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering\Tnosc.Shop.Sever.Module.Ordering.csproj" />
+    <ProjectReference Include="..\Modules\Payment\Tnosc.Shop.Sever.Module.Payment\Tnosc.Shop.Sever.Module.Payment.csproj" />
+  </ItemGroup>
+
+</Project>

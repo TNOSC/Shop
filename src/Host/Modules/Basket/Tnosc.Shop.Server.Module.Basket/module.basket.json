@@ -1,0 +1,8 @@
+{
+  "basket": {
+    "module": {
+      "name": "basket",
+      "enabled": true
+    }
+  }
+}

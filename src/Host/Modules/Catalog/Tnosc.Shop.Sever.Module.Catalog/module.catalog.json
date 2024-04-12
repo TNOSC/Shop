@@ -1,0 +1,8 @@
+{
+  "catalog": {
+    "module": {
+      "name": "catalog",
+      "enabled": true
+    }
+  }
+}

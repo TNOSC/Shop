@@ -1,0 +1,9 @@
+@hostname=localhost
+@port=7067
+@host={{hostname}}:{{port}}
+
+
+GET https://{{host}}/api/baskets/checkpoint
+Accept: application/json
+
+###
