@@ -14,90 +14,70 @@ ifndef::imagesdir[:imagesdir: ../../images]
 == Introduction and Goals
 
 [role="arc42help"]
-****
-Describes the relevant requirements and the driving forces that software architects and development team must consider. 
-These include
+The eCommerce platform should aim to increase market share and attract new customers by providing a user-friendly shopping experience.
 
-* underlying business goals, 
-* essential features, 
-* essential functional requirements, 
-* quality goals for the architecture and
-* relevant stakeholders and their expectations
-****
+The primary business goal is to generate revenue through online sales. Therefore, the platform should be designed to encourage purchases.
 
 === Requirements Overview
 
+image::uml/shop_UseCaseDiagram/shop_UseCaseDiagram.png[]["Use Case Diagram"]
+
 [role="arc42help"]
-****
-.Contents
-Short description of the functional requirements, driving forces, extract (or abstract)
-of requirements. Link to (hopefully existing) requirements documents
-(with version number and information where to find it).
+Product Management:: The platform must support comprehensive product management capabilities, including catalog management, inventory tracking, and product variations (e.g., sizes, colors).
 
-.Motivation
-From the point of view of the end users a system is created or modified to
-improve support of a business activity and/or improve the quality.
+User Accounts and Authentication:: Users should be able to create accounts, log in securely, and manage their profiles, preferences, and orders.
 
-.Form
-Short textual description, probably in tabular use-case format.
-If requirements documents exist this overview should refer to these documents.
+Shopping Cart and Checkout:: A seamless shopping cart and checkout process are essential for a positive user experience. Users should be able to add items to their cart, review their order, and complete the checkout process efficiently.
 
-Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
+Payment Processing:: Secure payment processing is critical. The platform should support multiple payment methods, such as credit/debit cards, digital wallets, and alternative payment options, while complying with PCI DSS standards.
 
+Order Management:: The platform must have robust order management capabilities, including order tracking, fulfillment, and returns processing.
 
-.Further Information
-
-See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 documentation.
-
-****
 
 === Quality Goals
 
-[role="arc42help"]
-****
-.Contents
-The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. 
-We really mean quality goals for the architecture. Don't confuse them with project goals.
-They are not necessarily identical.
+[cols="10,10,80"]
+|===
+| Priority | Quality-Goal | Scenario
 
-Consider this overview of potential topics (based upon the ISO 25010 standard):
+| *High* | *Maintainability* | Structure the codebase and architecture to be modular, well-documented, and easy to maintain, allowing for efficient updates, bug fixes, and enhancements.
 
-image::01_2_iso-25010-topics-EN.drawio.png["Categories of Quality Requirements"]
+| *High* | *Extensibility* | Enable the platform to be easily extended with new features, functionalities, or integrations without requiring significant changes to the existing codebase. 
 
-.Motivation
-You should know the quality goals of your most important stakeholders, since they will influence fundamental architectural decisions. 
-Make sure to be very concrete about these qualities, avoid buzzwords.
-If you as an architect do not know how the quality of your work will be judged...
+| *High* | *Security* | Implement robust security measures to protect sensitive customer data, prevent unauthorized access, and ensure compliance with industry regulations (e.g., GDPR, PCI DSS).
 
-.Form
-A table with quality goals and concrete scenarios, ordered by priorities
-****
+| *High* | *Interoperability* | Ensure compatibility with third-party services, APIs, and integrations (e.g., payment gateways, shipping providers) to facilitate seamless transactions and order fulfillment.
+
+| *Medium* | *Usability* | Provide intuitive navigation, search functionality, and a user-friendly interface to enhance the shopping experience and encourage conversions.
+
+| *Medium* | *Flexibility* | Provide configurable options and customization capabilities to adapt to changing business requirements, market trends, and customer preferences.
+
+| *Medium* | *Testability* | Ensure that the platform can be thoroughly tested with unit tests, integration tests, and end-to-end tests to verify functionality and detect regressions.
+
+| *Low* | *Cost* | Minimize operating costs associated with hosting, maintenance, and development while maximizing the value delivered to customers and stakeholders.
+
+| *Low* | *Localization* | Support multiple languages, currencies, and regional variations to cater to a diverse customer base and expand into global markets.
+|===
 
 === Stakeholders
 
-[role="arc42help"]
-****
-.Contents
-Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that
-
-* should know the architecture
-* have to be convinced of the architecture
-* have to work with the architecture or with code
-* need the documentation of the architecture for their work
-* have to come up with decisions about the system or its development
-
-.Motivation
-You should know all parties involved in development of the system or affected by the system.
-Otherwise, you may get nasty surprises later in the development process.
-These stakeholders determine the extent and the level of detail of your work and its results.
-
-.Form
-Table with role names, person names, and their expectations with respect to the architecture and its documentation.
-****
-
-[options="header",cols="1,2,2"]
+[cols="15,15,70"]
 |===
-|Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+| Role/Name | Contact | Expectations
+
+| Developer | [Contact information] | Should understand the architecture to effectively implement features and modules. Need to collaborate with architects and other team members to ensure adherence to architectural guidelines. 
+
+| Architect | [Contact information] | Should define the system architecture, ensuring it meets business requirements and quality attributes. Need to communicate architectural decisions effectively to developers and stakeholders.
+
+| Product Owner | [Contact information] | Should understand the architecture to align technical decisions with business objectives. Need to provide input on feature priorities and requirements based on architectural constraints.
+
+| Tester | [Contact information] | Should understand the architecture to design and execute appropriate tests. Need to identify areas of risk and ensure comprehensive test coverage based on architectural dependencies.
+
+| DevOps | [Contact information] | Should understand the architecture to deploy, monitor, and maintain the system effectively. Need to configure deployment pipelines and infrastructure based on architectural requirements.
+
+| Project Manager | [Contact information] | Should understand the architecture to plan and monitor project activities effectively. Need to ensure project timelines and resources align with architectural constraints.
+
+| Business Analyst | [Contact information] | Should understand the architecture to elicit and document requirements effectively. Need to ensure that business requirements are aligned with architectural decisions and constraints.
 |===
+
+

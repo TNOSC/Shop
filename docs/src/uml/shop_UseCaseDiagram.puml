@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor Customer as C
+actor Administrator as A
+
+rectangle "Shop" {
+    usecase "Log in" as LI
+    usecase "User Management" as UM
+    usecase "Product Management" as PM
+    usecase "Shopping" as S
+    usecase "Checkout" as CO
+    usecase "Order Management" as OM
+
+    C -- S
+    C -- CO 
+    CO ..> LI: <<include>> 
+    C -- OM 
+    OM .. LI: <<include>> 
+
+    A -- UM
+    UM ..> LI: <<include>> 
+    A -- PM
+    PM ..> LI: <<include>>
+    
+    A --|> C
+
+}
+
+
+@enduml
