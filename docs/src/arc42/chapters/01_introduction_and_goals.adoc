@@ -36,7 +36,7 @@ Order Management:: The platform must have robust order management capabilities, 
 
 [cols="10,20,70"]
 |===
-| Priority | Quality-Goal | Scenario
+^| Priority ^| Quality-Goal ^| Scenario
 
 ^| 1 ^| Maintainability | Structure the codebase and architecture to be modular, well-documented, and easy to maintain, allowing for efficient updates, bug fixes, and enhancements.
 
@@ -61,7 +61,7 @@ Order Management:: The platform must have robust order management capabilities, 
 
 [cols="15,15,70"]
 |===
-| Role/Name | Contact | Expectations
+^| Role/Name ^| Contact ^| Expectations
 
 ^| Developer ^| [Contact information] | Should understand the architecture to effectively implement features and modules. Need to collaborate with architects and other team members to ensure adherence to architectural guidelines. 
 
