@@ -8,8 +8,6 @@ ifndef::imagesdir[:imagesdir: ../../images]
 
 :toc:
 
-
-
 [[section-introduction-and-goals]]
 == Introduction and Goals
 
@@ -40,23 +38,23 @@ Order Management:: The platform must have robust order management capabilities, 
 |===
 | Priority | Quality-Goal | Scenario
 
-| *High* | *Maintainability* | Structure the codebase and architecture to be modular, well-documented, and easy to maintain, allowing for efficient updates, bug fixes, and enhancements.
+^| 1 ^| Maintainability | Structure the codebase and architecture to be modular, well-documented, and easy to maintain, allowing for efficient updates, bug fixes, and enhancements.
 
-| *High* | *Extensibility* | Enable the platform to be easily extended with new features, functionalities, or integrations without requiring significant changes to the existing codebase. 
+^| 1 ^| Extensibility | Enable the platform to be easily extended with new features, functionalities, or integrations without requiring significant changes to the existing codebase. 
 
-| *High* | *Security* | Implement robust security measures to protect sensitive customer data, prevent unauthorized access, and ensure compliance with industry regulations (e.g., GDPR, PCI DSS).
+^| 1 ^| Security | Implement robust security measures to protect sensitive customer data, prevent unauthorized access, and ensure compliance with industry regulations (e.g., GDPR, PCI DSS).
 
-| *High* | *Interoperability* | Ensure compatibility with third-party services, APIs, and integrations (e.g., payment gateways, shipping providers) to facilitate seamless transactions and order fulfillment.
+^| 1 ^| Interoperability | Ensure compatibility with third-party services, APIs, and integrations (e.g., payment gateways, shipping providers) to facilitate seamless transactions and order fulfillment.
 
-| *Medium* | *Usability* | Provide intuitive navigation, search functionality, and a user-friendly interface to enhance the shopping experience and encourage conversions.
+^| 2 ^| Usability | Provide intuitive navigation, search functionality, and a user-friendly interface to enhance the shopping experience and encourage conversions.
 
-| *Medium* | *Flexibility* | Provide configurable options and customization capabilities to adapt to changing business requirements, market trends, and customer preferences.
+^| 2 ^| Flexibility | Provide configurable options and customization capabilities to adapt to changing business requirements, market trends, and customer preferences.
 
-| *Medium* | *Testability* | Ensure that the platform can be thoroughly tested with unit tests, integration tests, and end-to-end tests to verify functionality and detect regressions.
+^| 2 ^| Testability | Ensure that the platform can be thoroughly tested with unit tests, integration tests, and end-to-end tests to verify functionality and detect regressions.
 
-| *Low* | *Cost* | Minimize operating costs associated with hosting, maintenance, and development while maximizing the value delivered to customers and stakeholders.
+^| 3 ^| Cost | Minimize operating costs associated with hosting, maintenance, and development while maximizing the value delivered to customers and stakeholders.
 
-| *Low* | *Localization* | Support multiple languages, currencies, and regional variations to cater to a diverse customer base and expand into global markets.
+^| 3 ^| Localization | Support multiple languages.
 |===
 
 === Stakeholders
@@ -65,19 +63,17 @@ Order Management:: The platform must have robust order management capabilities, 
 |===
 | Role/Name | Contact | Expectations
 
-| Developer | [Contact information] | Should understand the architecture to effectively implement features and modules. Need to collaborate with architects and other team members to ensure adherence to architectural guidelines. 
+^| Developer ^| [Contact information] | Should understand the architecture to effectively implement features and modules. Need to collaborate with architects and other team members to ensure adherence to architectural guidelines. 
 
-| Architect | [Contact information] | Should define the system architecture, ensuring it meets business requirements and quality attributes. Need to communicate architectural decisions effectively to developers and stakeholders.
+^| Architect ^| [Contact information] | Should define the system architecture, ensuring it meets business requirements and quality attributes. Need to communicate architectural decisions effectively to developers and stakeholders.
 
-| Product Owner | [Contact information] | Should understand the architecture to align technical decisions with business objectives. Need to provide input on feature priorities and requirements based on architectural constraints.
+^| Product Owner ^| [Contact information] | Should understand the architecture to align technical decisions with business objectives. Need to provide input on feature priorities and requirements based on architectural constraints.
 
-| Tester | [Contact information] | Should understand the architecture to design and execute appropriate tests. Need to identify areas of risk and ensure comprehensive test coverage based on architectural dependencies.
+^| Tester ^| [Contact information] | Should understand the architecture to design and execute appropriate tests. Need to identify areas of risk and ensure comprehensive test coverage based on architectural dependencies.
 
-| DevOps | [Contact information] | Should understand the architecture to deploy, monitor, and maintain the system effectively. Need to configure deployment pipelines and infrastructure based on architectural requirements.
+^| DevOps ^| [Contact information] | Should understand the architecture to deploy, monitor, and maintain the system effectively. Need to configure deployment pipelines and infrastructure based on architectural requirements.
 
-| Project Manager | [Contact information] | Should understand the architecture to plan and monitor project activities effectively. Need to ensure project timelines and resources align with architectural constraints.
+^| Project Manager ^| [Contact information] | Should understand the architecture to plan and monitor project activities effectively. Need to ensure project timelines and resources align with architectural constraints.
 
-| Business Analyst | [Contact information] | Should understand the architecture to elicit and document requirements effectively. Need to ensure that business requirements are aligned with architectural decisions and constraints.
+^| Business Analyst ^| [Contact information] | Should understand the architecture to elicit and document requirements effectively. Need to ensure that business requirements are aligned with architectural decisions and constraints.
 |===
-
-

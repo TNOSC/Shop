@@ -13,25 +13,40 @@ ifndef::imagesdir[:imagesdir: ../../images]
 [[section-architecture-constraints]]
 == Architecture Constraints
 
+This section outlines requirements that impose limitations on the freedom of design and implementation decisions within the development process.
 
-[role="arc42help"]
-****
-.Contents
-Any requirement that constraints software architects in their freedom of design and implementation decisions or decision about the development process. These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.
+=== Technical Constraints
 
-.Motivation
-Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
-Constraints must always be dealt with; they may be negotiable, though.
+[cols="10,30,60"]
+|===
+|  | Constraint | Background and / or motivation
 
-.Form
-Simple tables of constraints with explanations.
-If needed you can subdivide them into
-technical constraints, organizational and political constraints and
-conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
+3+|Software and Programming Constraints
 
+^| TC1 | Implementation in C# | The application must be developed using the C# programming language to ensure compatibility with the .NET 8 environment.
 
-.Further Information
+^| TC2 | Third-party Software Licensing | All third-party software utilized in the application must be available under an open-source license compatible with the project's requirements. Additionally, it should be installable via a package manager to facilitate seamless integration and updates.
 
-See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 documentation.
+3+|Operating System Constraints
 
-****
+^| TC3 | OS-Independent Development | The application should be designed to be platform-independent, ensuring compatibility with major operating systems such as Mac OS X, Linux, and Windows. This flexibility allows for wider deployment options and increased accessibility for users.
+
+^| TC4 | Linux Server Deployment | To accommodate deployment in various hosting environments, the application must be capable of being deployed on Linux-based servers using standard deployment procedures. This ensures compatibility with common server configurations and facilitates seamless deployment processes.
+
+3+|Hardware Constraints
+
+^| TC5 | Memory Efficiency | Given potential resource constraints in shared or cloud-based hosting environments, the application should prioritize memory efficiency. Optimizing memory usage reduces operational costs and improves overall performance, making the application more scalable and cost-effective.
+|===
+
+=== Conventions
+
+[cols="10,30,60"]
+|===
+|  | Conventions | Background and / or motivation
+
+^| C1 | Architecture documentation | Structure based on the english arc42-Template in version 8.2
+
+^| C2 | Language | English. The projecttargets an international audience, so English should be used throughout the whole project.
+
+^| C3 | Naming conventions | The project uses https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/naming-rules[the Code-style name rules provided by micorosoft]. They are checked and enforced with https://github.com/TNOSC/Shop/blob/master/.editorconfig[.editorconfig].
+|===
