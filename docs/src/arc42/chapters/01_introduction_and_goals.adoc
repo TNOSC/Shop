@@ -36,7 +36,7 @@ Order Management:: The platform must have robust order management capabilities, 
 
 === Quality Goals
 
-[cols="10,10,80"]
+[cols="10,20,70"]
 |===
 | Priority | Quality-Goal | Scenario
 
