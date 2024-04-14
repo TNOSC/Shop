@@ -5,8 +5,8 @@ LAYOUT_WITH_LEGEND()
 
 title System Context diagram for Shop System
 
-Person(customer, "Customer", "A user of the e-commerce application.")
-Person(administartor, "Administrator", "Manages the e-commerce application.")
+Person(customer, "Customer", "A user that need products.")
+Person(administartor, "Administrator", "Manages the products and users.")
 System(shop, "Shop System", "Allows customers to view products and make orders.")
 
 System_Ext(mail_system, "E-mail system", "SendGrid service for sending emails.")
