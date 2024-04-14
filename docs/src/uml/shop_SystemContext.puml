@@ -1,0 +1,21 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title System Context diagram for Shop System
+
+Person(customer, "Customer", "A user of the e-commerce application.")
+Person(administartor, "Administrator", "Manages the e-commerce application.")
+System(shop, "Shop System", "Allows customers to view products and make orders.")
+
+System_Ext(mail_system, "E-mail system", "SendGrid service for sending emails.")
+System_Ext(payment, "Payment Gateway", "Handles payment processing.")
+
+Rel(customer, shop, "Uses")
+Rel(administartor, shop, "Uses")
+Rel_Back(customer, mail_system, "Sends e-mails to")
+Rel_R(shop, mail_system, "Sends e-mails")
+Rel_L(shop, payment, "Uses")
+
+@enduml
