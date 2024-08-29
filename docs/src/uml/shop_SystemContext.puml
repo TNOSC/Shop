@@ -11,11 +11,13 @@ System(shop, "Shop System", "Allows customers to view products and make orders."
 
 System_Ext(mail_system, "E-mail system", "SendGrid service for sending emails.")
 System_Ext(payment, "Payment Gateway", "Handles payment processing.")
+System_Ext(shipment, "Shipment", "The system used for sending shipments.")
 
 Rel(customer, shop, "Uses")
 Rel(administartor, shop, "Uses")
 Rel_Back(customer, mail_system, "Sends e-mails to")
 Rel_R(shop, mail_system, "Sends e-mails")
 Rel_L(shop, payment, "Uses")
+Rel_D(shop, shipment, "Sends orders using")
 
 @enduml

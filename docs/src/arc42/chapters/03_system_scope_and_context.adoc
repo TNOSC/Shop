@@ -26,4 +26,5 @@ image::uml/shop_SystemContext/shop_SystemContext.png[]["System Context"]
 |Administrator|Refers to authorized personnel responsible for managing the e-commerce application.
 |E-mail system|Represents the SendGrid service used for sending communication and notifications via email.
 |Payment Gateway|Represents the external service responsible for handling payment processing for transactions.
+|Shipment|Responsible for managing shipment logistics, including order fulfillment, tracking, and delivery
 |===

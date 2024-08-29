@@ -22,42 +22,23 @@
  SOFTWARE.
  */
 
-using System.Reflection;
-using Tnosc.Components.Abstractions.Module;
-using Tnosc.Components.Infrastructure.ApplicationService.Decorators;
-using Tnosc.Components.Infrastructure.Logging;
-using Tnosc.Components.Infrastructure.Module;
-
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
-builder.Host.UseLogging();
-builder.WebHost.ConfigureModules();
-
-IList<Assembly> _assemblies = ModuleLoader.LoadAssemblies(builder.Configuration, "Sever.Module.");
-IList<IModule> _modules = ModuleLoader.LoadModules(_assemblies);
-
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddModules(builder.Configuration, _modules);
-builder.Services.AddDefaultPipelineBehaviors();
+builder.Services.AddReverseProxy()
+    .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
+builder.Services.AddHealthChecks();
 
 WebApplication app = builder.Build();
-
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseReDoc(reDoc =>
-    {
-        reDoc.RoutePrefix = string.Empty;
-        reDoc.SpecUrl("/swagger/v1/swagger.json");
-        reDoc.DocumentTitle = "Shop";
-    });
+    app.UseSwaggerUI();
 }
 
-app.UseModules(_modules);
-
-_assemblies.Clear();
-_modules.Clear();
-
+app.UseHttpsRedirection();
+app.MapReverseProxy();
+app.MapHealthChecks("health");
 app.Run();

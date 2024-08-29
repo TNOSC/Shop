@@ -141,17 +141,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{47351D4D-A17D-4202-9BE7-5C985E47D382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Server.Module.Basket.ArchitectureTests", "test\Modules\Basket\Tnosc.Shop.Server.Module.Basket.ArchitectureTests\Tnosc.Shop.Server.Module.Basket.ArchitectureTests.csproj", "{C632EEBC-C8D5-4B07-A3C1-E8EB5A1D039D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Basket.ArchitectureTests", "test\Modules\Basket\Tnosc.Shop.Server.Module.Basket.ArchitectureTests\Tnosc.Shop.Server.Module.Basket.ArchitectureTests.csproj", "{C632EEBC-C8D5-4B07-A3C1-E8EB5A1D039D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests", "test\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests\Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests.csproj", "{F8CA5596-D20E-4E07-8745-F2FFA9FA2A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests", "test\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests\Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests.csproj", "{F8CA5596-D20E-4E07-8745-F2FFA9FA2A8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Identity.ArchitectureTests", "test\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.ArchitectureTests\Tnosc.Shop.Sever.Module.Identity.ArchitectureTests.csproj", "{EE86FD88-9085-4233-BC12-1F16F2B3A0CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity.ArchitectureTests", "test\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.ArchitectureTests\Tnosc.Shop.Sever.Module.Identity.ArchitectureTests.csproj", "{EE86FD88-9085-4233-BC12-1F16F2B3A0CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Notification.ArchitectureTests", "test\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.ArchitectureTests\Tnosc.Shop.Sever.Module.Notification.ArchitectureTests.csproj", "{DA80DC6C-C9BB-4F87-A320-2AB4AC77164E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Notification.ArchitectureTests", "test\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.ArchitectureTests\Tnosc.Shop.Sever.Module.Notification.ArchitectureTests.csproj", "{DA80DC6C-C9BB-4F87-A320-2AB4AC77164E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests", "test\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests\Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests.csproj", "{06108276-9E25-4E5A-B2AF-8F5A20F7F630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests", "test\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests\Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests.csproj", "{06108276-9E25-4E5A-B2AF-8F5A20F7F630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Payment.ArchitectureTests", "test\Modules\Payment\Tnosc.Shop.Sever.Module.Payment.ArchitectureTests\Tnosc.Shop.Sever.Module.Payment.ArchitectureTests.csproj", "{8A3662A1-CB31-46AE-AC65-6B661AD124BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Payment.ArchitectureTests", "test\Modules\Payment\Tnosc.Shop.Sever.Module.Payment.ArchitectureTests\Tnosc.Shop.Sever.Module.Payment.ArchitectureTests.csproj", "{8A3662A1-CB31-46AE-AC65-6B661AD124BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{E4EEC98A-F0C3-4828-9E96-CF271B5C1540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.BFF", "src\Gateway\Tnosc.Shop.BFF\Tnosc.Shop.BFF.csproj", "{C3135DAB-7880-4720-9E5C-BD1341E04ED3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -327,6 +331,10 @@ Global
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -404,6 +412,8 @@ Global
 		{DA80DC6C-C9BB-4F87-A320-2AB4AC77164E} = {62EB3F2F-D76C-47BD-A39C-B6F62EA8C098}
 		{06108276-9E25-4E5A-B2AF-8F5A20F7F630} = {6DA12D5F-BEA0-433C-AF4C-4C9B051828AC}
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD} = {47351D4D-A17D-4202-9BE7-5C985E47D382}
+		{E4EEC98A-F0C3-4828-9E96-CF271B5C1540} = {C6F3E231-813F-41CB-98FA-91E4B5AF5453}
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3} = {E4EEC98A-F0C3-4828-9E96-CF271B5C1540}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {739B8EAF-509B-48A6-A9E7-62A9D33DFA1C}

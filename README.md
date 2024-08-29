@@ -24,7 +24,7 @@ A reference .NET application implementing an eCommerce web site using a **modula
 
 * (Windows only) Run the application from Visual Studio:
  - Open the `Tnosc.Shop.sln` file in Visual Studio
- - Ensure that `Tnosc.Shop.Host.Web.csproj` and `Tnosc.Shop.Server.Bootstrapper.csproj`  are your startup projects
+ - Ensure that `Tnosc.Shop.Server.Bootstrapper.csproj`, `Tnosc.Shop.BFF.csproj` and `Tnosc.Shop.Host.Web.csproj` are your startup projects
 	
 	![startup projects](./docs/src/images/startup-project.PNG)
  - Hit Ctrl-F5 to launch the application 

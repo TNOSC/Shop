@@ -27,3 +27,17 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+
+  tnosc.shop.bff:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=7080
+      - ASPNETCORE_HTTPS_PORTS=7081
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=tnosc
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/tnoscshop.pfx
+    ports:
+      - "7080:7080"
+      - "7081:7081"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
