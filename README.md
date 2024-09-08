@@ -74,7 +74,7 @@ For more information about these shared libraries, please check this link https:
 
 The documentation for this project follows the [arc42 template](https://arc42.org/overview), which is a standardized approach for documenting software and system architecture. 
 
-The PDF output of the documentation is located [here](./docs/build/pdf/arc42/arc42.pdf).
+The PDF output of the documentation is located [here](./docs/build/pdf/arc42/arc42.pdf) (In Progress).
 
 ## Technologies & Libraries
 - OpenTelemetry
