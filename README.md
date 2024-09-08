@@ -61,9 +61,6 @@ dotnet dev-certs https -ep "$env:APPDATA\ASP.NET\Https\tnoscshop.pfx" -p tnosc -
 docker-compose up -d
 ```
 
-
-The following table lists all the running services along with their exposed ports and a brief description:
-
 ### Shared Libraries
 
 This project uses shared libraries encapsulated as Nuget packages https://www.nuget.org/profiles/TNOSC to promote code reusability and maintainability.
