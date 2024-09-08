@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="module.catalog.development.json" />
+    <None Remove="module.catalog.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="module.catalog.development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="module.catalog.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tnosc.Components.Abstractions.Module" Version="1.0.4-alpha.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Catalog.Api\Tnosc.Shop.Server.Module.Catalog.Api.csproj" />
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Catalog.Persistence\Tnosc.Shop.Server.Module.Catalog.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

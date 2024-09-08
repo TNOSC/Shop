@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="module.payment.development.json" />
+    <None Remove="module.payment.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="module.payment.development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="module.payment.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tnosc.Components.Abstractions.Module" Version="1.0.4-alpha.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Payment.ApplicationServcie\Tnosc.Shop.Server.Module.Payment.ApplicationServcie.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -23,7 +23,11 @@
  */
 
 using System.Reflection;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 using Tnosc.Components.Abstractions.Module;
+using Tnosc.Components.Infrastructure.Api;
 using Tnosc.Components.Infrastructure.ApplicationService.Decorators;
 using Tnosc.Components.Infrastructure.Logging;
 using Tnosc.Components.Infrastructure.Module;
@@ -32,30 +36,35 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Host.UseLogging();
 builder.WebHost.ConfigureModules();
 
-IList<Assembly> _assemblies = ModuleLoader.LoadAssemblies(builder.Configuration, "Sever.Module.");
+IList<Assembly> _assemblies = ModuleLoader.LoadAssemblies(builder.Configuration, "Server.Module.");
 IList<IModule> _modules = ModuleLoader.LoadModules(_assemblies);
 
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
 builder.Services.AddModules(builder.Configuration, _modules);
 builder.Services.AddDefaultPipelineBehaviors();
 
+Action<ResourceBuilder> appResourceBuilder =
+            resource => resource
+                .AddTelemetrySdk()
+                .AddService(builder.Configuration.GetValue<string>("Otlp:ServiceName")!);
+
+builder.Services.AddOpenTelemetry()
+            .ConfigureResource(appResourceBuilder)
+            .WithTracing(options => options
+                .AddAspNetCoreInstrumentation()
+                .AddHttpClientInstrumentation()
+                .AddOtlpExporter(options => options.Endpoint = new Uri(builder.Configuration.GetValue<string>("Otlp:Endpoint")!))
+            )
+            .WithMetrics(options => options
+                .AddRuntimeInstrumentation()
+                .AddAspNetCoreInstrumentation()
+                .AddOtlpExporter(options => options.Endpoint = new Uri(builder.Configuration.GetValue<string>("Otlp:Endpoint")!)));
+
 WebApplication app = builder.Build();
 
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseReDoc(reDoc =>
-    {
-        reDoc.RoutePrefix = string.Empty;
-        reDoc.SpecUrl("/swagger/v1/swagger.json");
-        reDoc.DocumentTitle = "Shop";
-    });
-}
-
+app.UseHsts();
 app.UseModules(_modules);
+app.UseOpenApi();
 
 _assemblies.Clear();
 _modules.Clear();

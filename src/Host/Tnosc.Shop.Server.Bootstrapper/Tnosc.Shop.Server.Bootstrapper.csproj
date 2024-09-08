@@ -12,19 +12,23 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="6.5.0" />
-    <PackageReference Include="Tnosc.Framework.Module.Core" Version="1.0.0-alpha" />
-    <PackageReference Include="Tnosc.Components.Infrastructure.Module" Version="1.0.0-alpha" />
+    <PackageReference Include="Tnosc.Framework.Module.Core" Version="1.0.4-alpha.4" />
+    <PackageReference Include="Tnosc.Components.Infrastructure.Module" Version="1.0.4-alpha.4" />
+    <PackageReference Include="OpenTelemetry" Version="1.4.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.4.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc9.14" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.4.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc9.14" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.1.0-rc.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Modules\Basket\Tnosc.Shop.Server.Module.Basket\Tnosc.Shop.Server.Module.Basket.csproj" />
-    <ProjectReference Include="..\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog\Tnosc.Shop.Sever.Module.Catalog.csproj" />
-    <ProjectReference Include="..\Modules\Identity\Tnosc.Shop.Sever.Module.Identity\Tnosc.Shop.Sever.Module.Identity.csproj" />
-    <ProjectReference Include="..\Modules\Notification\Tnosc.Shop.Sever.Module.Notification\Tnosc.Shop.Sever.Module.Notification.csproj" />
-    <ProjectReference Include="..\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering\Tnosc.Shop.Sever.Module.Ordering.csproj" />
-    <ProjectReference Include="..\Modules\Payment\Tnosc.Shop.Sever.Module.Payment\Tnosc.Shop.Sever.Module.Payment.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog\Tnosc.Shop.Server.Module.Catalog.csproj" />
+    <ProjectReference Include="..\Modules\Identity\Tnosc.Shop.Server.Module.Identity\Tnosc.Shop.Server.Module.Identity.csproj" />
+    <ProjectReference Include="..\Modules\Notification\Tnosc.Shop.Server.Module.Notification\Tnosc.Shop.Server.Module.Notification.csproj" />
+    <ProjectReference Include="..\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering\Tnosc.Shop.Server.Module.Ordering.csproj" />
+    <ProjectReference Include="..\Modules\Payment\Tnosc.Shop.Server.Module.Payment\Tnosc.Shop.Server.Module.Payment.csproj" />
   </ItemGroup>
 
 </Project>

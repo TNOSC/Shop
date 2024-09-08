@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="module.ordering.development.json" />
+    <None Remove="module.ordering.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="module.ordering.development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="module.ordering.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tnosc.Components.Abstractions.Module" Version="1.0.4-alpha.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Ordering.Api\Tnosc.Shop.Server.Module.Ordering.Api.csproj" />
+    <ProjectReference Include="..\Tnosc.Shop.Server.Module.Ordering.Persistence\Tnosc.Shop.Server.Module.Ordering.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

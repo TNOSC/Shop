@@ -22,6 +22,13 @@
  SOFTWARE.
  */
 
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
+using OpenTelemetry;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -30,6 +37,23 @@ builder.Services.AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 builder.Services.AddHealthChecks();
 
+Action<ResourceBuilder> appResourceBuilder =
+            resource => resource
+                .AddTelemetrySdk()
+                .AddService(builder.Configuration.GetValue<string>("Otlp:ServiceName")!);
+
+builder.Services.AddOpenTelemetry()
+            .ConfigureResource(appResourceBuilder)
+            .WithTracing(options => options
+                .AddAspNetCoreInstrumentation()
+                .AddHttpClientInstrumentation()
+                .AddOtlpExporter(options => options.Endpoint = new Uri(builder.Configuration.GetValue<string>("Otlp:Endpoint")!))
+            )
+            .WithMetrics(options => options
+                .AddRuntimeInstrumentation()
+                .AddAspNetCoreInstrumentation()
+                .AddOtlpExporter(options => options.Endpoint = new Uri(builder.Configuration.GetValue<string>("Otlp:Endpoint")!)));
+
 WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -37,8 +61,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseExceptionHandler("/Error", createScopeForErrors: true);
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
 
-app.UseHttpsRedirection();
 app.MapReverseProxy();
-app.MapHealthChecks("health");
+app.MapHealthChecks("/health", new HealthCheckOptions
+{
+    AllowCachingResponses = false,
+    ResultStatusCodes =
+            {
+                [HealthStatus.Healthy] = StatusCodes.Status200OK,
+                [HealthStatus.Degraded] = StatusCodes.Status200OK,
+                [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+            }
+});
 app.Run();

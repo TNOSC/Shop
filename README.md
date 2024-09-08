@@ -20,11 +20,37 @@ A reference .NET application implementing an eCommerce web site using a **modula
 - Install & start Docker Desktop:  https://docs.docker.com/engine/install/
 - Clone the Shop repository: https://github.com/TNOSC/shop
 
+### Running Dependencies
+
+1. Navigate to the `infra` folder where the Docker Compose configuration for dependencies is located:
+```powershell
+   cd infra
+```
+2. Run Docker Compose to start the required dependencies (e.g., databases, message brokers, etc.):
+```powershell
+docker-compose up -d
+```
+
+The Docker Compose setup will run the following services:
+
+| **Service**   | **Ports**                   | **Description**                                                                                   |
+|---------------|-----------------------------|---------------------------------------------------------------------------------------------------|
+| **blackbox**  | `9115:9115`                 | Prometheus Blackbox Exporter for probing endpoints.                                                |
+| **prometheus**| `9090:9090`                 | Prometheus monitoring system and time series database.                                             |
+| **tempo**     | `3200:3200`, `4007:4317`    | Grafana Tempo for tracing. Exposes OTLP gRPC and tracing services.                                 |
+| **loki**      | `3100:3100`                 | Grafana Loki for log aggregation and querying.                                                     |
+| **grafana**   | `3000:3000`                 | Grafana for data visualization dashboards.                                                         |
+| **otel-collector**| `8888:8888`, `8889:8889`, `4317:4317`, `9200:55679`, `13133:13133` | OpenTelemetry Collector for processing telemetry data from various sources.                         |
+| **rabbitmq**  | `5672:5672`, `15672:15672`  | RabbitMQ message broker with management UI.                                                        |
+| **postgres**  | `5432:5432`                 | PostgreSQL database for storing application data.                                                  |
+| **pgadmin**   | `9080:80`                   | pgAdmin for managing PostgreSQL databases.                                                         |
+
+
 ### Running the solution
 
 * (Windows only) Run the application from Visual Studio:
  - Open the `Tnosc.Shop.sln` file in Visual Studio
- - Ensure that `Tnosc.Shop.Server.Bootstrapper.csproj`, `Tnosc.Shop.BFF.csproj` and `Tnosc.Shop.Host.Web.csproj` are your startup projects
+ - Ensure that `Tnosc.Shop.Server.Bootstrapper.csproj`, `Tnosc.Shop.BFF.csproj` and `Tnosc.Shop.Client.Host.Web.csproj` are your startup projects
 	
 	![startup projects](./docs/src/images/startup-project.PNG)
  - Hit Ctrl-F5 to launch the application 
@@ -32,9 +58,11 @@ A reference .NET application implementing an eCommerce web site using a **modula
 * Or run the application from your terminal using docker:
 ```powershell
 dotnet dev-certs https -ep "$env:APPDATA\ASP.NET\Https\tnoscshop.pfx" -p tnosc --trust
-docker-compose up
+docker-compose up -d
 ```
-![startup projects](./docs/src/images/docker-compose.PNG)
+
+
+The following table lists all the running services along with their exposed ports and a brief description:
 
 ### Shared Libraries
 
@@ -49,7 +77,7 @@ The documentation for this project follows the [arc42 template](https://arc42.or
 The PDF output of the documentation is located [here](./docs/build/pdf/arc42/arc42.pdf).
 
 ## Technologies & Libraries
-
+- OpenTelemetry
 - Microsoft Fluent UI Blazor components
 - Minimal APIs
 - Swagger & Swagger UI

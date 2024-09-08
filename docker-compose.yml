@@ -6,12 +6,16 @@ services:
     build:
       context: .
       dockerfile: src/Host/Tnosc.Shop.Server.Bootstrapper/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
 
-  tnosc.shop.host.web:
+  tnosc.Shop.Client.Host.Web:
     image: ${DOCKER_REGISTRY-}tnoscshophostweb
     build:
       context: .
-      dockerfile: src/Client/Tnosc.Shop.Host.Web/Tnosc.Shop.Host.Web/Dockerfile
+      dockerfile: src/Client/Tnosc.Shop.Client.Host.Web/Tnosc.Shop.Client.Host.Web/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
 
 
   tnosc.shop.bff:
@@ -19,4 +23,5 @@ services:
     build:
       context: .
       dockerfile: src/Gateway/Tnosc.Shop.BFF/Dockerfile
-
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker

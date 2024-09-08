@@ -1,4 +1,4 @@
-namespace Tnosc.Shop.Sever.Module.Basket.UnitTests;
+namespace Tnosc.Shop.Server.Module.Basket.UnitTests;
 
 public class UnitTest1
 {
