@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C6F3E231-813
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2FAA9A3C-40F0-486A-A607-1AFB0EFECC3D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Host.Web", "src\Client\Tnosc.Shop.Host.Web\Tnosc.Shop.Host.Web\Tnosc.Shop.Host.Web.csproj", "{210E4C16-0E59-444B-BAFB-EA14F04C2617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Client.Host.Web", "src\Client\Tnosc.Shop.Client.Host.Web\Tnosc.Shop.Client.Host.Web\Tnosc.Shop.Client.Host.Web.csproj", "{210E4C16-0E59-444B-BAFB-EA14F04C2617}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Host.Web.Client", "src\Client\Tnosc.Shop.Host.Web\Tnosc.Shop.Host.Web.Client\Tnosc.Shop.Host.Web.Client.csproj", "{1621A820-B2E8-4B0F-B2EC-F8B5D6A4353A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Client.Host.Web.Client", "src\Client\Tnosc.Shop.Client.Host.Web\Tnosc.Shop.Client.Host.Web.Client\Tnosc.Shop.Client.Host.Web.Client.csproj", "{1621A820-B2E8-4B0F-B2EC-F8B5D6A4353A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{3FC85555-1F29-4101-9F67-7DEDE2154A51}"
 EndProject
@@ -21,17 +21,17 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{087B58BC-F1C8-4734-9861-8A56EF39190C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity", "src\Host\Modules\Identity\Tnosc.Shop.Sever.Module.Identity\Tnosc.Shop.Sever.Module.Identity.csproj", "{27B1B0F4-40FF-4705-8336-CE8BA1AA3185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity", "src\Host\Modules\Identity\Tnosc.Shop.Server.Module.Identity\Tnosc.Shop.Server.Module.Identity.csproj", "{27B1B0F4-40FF-4705-8336-CE8BA1AA3185}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{52D472C9-91D6-4AC5-A576-F1644AC1AAFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity.Api", "src\Host\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.Api\Tnosc.Shop.Sever.Module.Identity.Api.csproj", "{C14AF046-8D63-418C-A375-A2BA7FAA2924}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity.Api", "src\Host\Modules\Identity\Tnosc.Shop.Server.Module.Identity.Api\Tnosc.Shop.Server.Module.Identity.Api.csproj", "{C14AF046-8D63-418C-A375-A2BA7FAA2924}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity.ApplicationService", "src\Host\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.ApplicationService\Tnosc.Shop.Sever.Module.Identity.ApplicationService.csproj", "{E5C33CDB-AA34-4D88-BD4E-109B6832D14B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity.ApplicationService", "src\Host\Modules\Identity\Tnosc.Shop.Server.Module.Identity.ApplicationService\Tnosc.Shop.Server.Module.Identity.ApplicationService.csproj", "{E5C33CDB-AA34-4D88-BD4E-109B6832D14B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity.DomainModel", "src\Host\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.DomainModel\Tnosc.Shop.Sever.Module.Identity.DomainModel.csproj", "{ACBC2AE4-F06C-49FB-A900-912EEDDA739E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity.DomainModel", "src\Host\Modules\Identity\Tnosc.Shop.Server.Module.Identity.DomainModel\Tnosc.Shop.Server.Module.Identity.DomainModel.csproj", "{ACBC2AE4-F06C-49FB-A900-912EEDDA739E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity.Persistence", "src\Host\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.Persistence\Tnosc.Shop.Sever.Module.Identity.Persistence.csproj", "{1E556D0C-A25B-43E4-A5B8-1CDD59F45181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity.Persistence", "src\Host\Modules\Identity\Tnosc.Shop.Server.Module.Identity.Persistence\Tnosc.Shop.Server.Module.Identity.Persistence.csproj", "{1E556D0C-A25B-43E4-A5B8-1CDD59F45181}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{52F0B429-A246-4BBE-9532-489E81E7CF62}"
 EndProject
@@ -57,17 +57,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCore", "Applicat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DB9832B9-FB0F-41B2-AAA3-56EBC32E8F98}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog", "src\Host\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog\Tnosc.Shop.Sever.Module.Catalog.csproj", "{5FC96E49-84B1-4095-BD58-A4B8A2DC2738}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog", "src\Host\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog\Tnosc.Shop.Server.Module.Catalog.csproj", "{5FC96E49-84B1-4095-BD58-A4B8A2DC2738}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{65942664-BB0A-4C93-A347-1F298FE9311E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog.Api", "src\Host\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.Api\Tnosc.Shop.Sever.Module.Catalog.Api.csproj", "{726A4770-81D0-4F46-B796-CD2423A292E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog.Api", "src\Host\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog.Api\Tnosc.Shop.Server.Module.Catalog.Api.csproj", "{726A4770-81D0-4F46-B796-CD2423A292E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog.ApplicationService", "src\Host\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.ApplicationService\Tnosc.Shop.Sever.Module.Catalog.ApplicationService.csproj", "{61F31024-B81C-4644-81B3-69DE6E9CF6B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog.ApplicationService", "src\Host\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog.ApplicationService\Tnosc.Shop.Server.Module.Catalog.ApplicationService.csproj", "{61F31024-B81C-4644-81B3-69DE6E9CF6B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog.DomainModel", "src\Host\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.DomainModel\Tnosc.Shop.Sever.Module.Catalog.DomainModel.csproj", "{8819D9D1-9696-4638-8AE3-B3F84B0414E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog.DomainModel", "src\Host\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog.DomainModel\Tnosc.Shop.Server.Module.Catalog.DomainModel.csproj", "{8819D9D1-9696-4638-8AE3-B3F84B0414E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog.Persistence", "src\Host\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.Persistence\Tnosc.Shop.Sever.Module.Catalog.Persistence.csproj", "{9589C1EC-0F84-4739-9863-48D65157BE29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog.Persistence", "src\Host\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog.Persistence\Tnosc.Shop.Server.Module.Catalog.Persistence.csproj", "{9589C1EC-0F84-4739-9863-48D65157BE29}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{DCCB1D66-EBE8-4DDA-95BC-C92C67F8D27C}"
 EndProject
@@ -77,15 +77,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{BD5360C4-E655-4444-8F42-5E11B611CE97}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering", "src\Host\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering\Tnosc.Shop.Sever.Module.Ordering.csproj", "{77F9A8F9-09F4-4C79-82CB-CEEFAB093D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering", "src\Host\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering\Tnosc.Shop.Server.Module.Ordering.csproj", "{77F9A8F9-09F4-4C79-82CB-CEEFAB093D74}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering.Api", "src\Host\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.Api\Tnosc.Shop.Sever.Module.Ordering.Api.csproj", "{1FC80F94-B11D-4BB9-BA4F-AD69C5609A47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering.Api", "src\Host\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering.Api\Tnosc.Shop.Server.Module.Ordering.Api.csproj", "{1FC80F94-B11D-4BB9-BA4F-AD69C5609A47}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering.ApplicationService", "src\Host\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.ApplicationService\Tnosc.Shop.Sever.Module.Ordering.ApplicationService.csproj", "{20724344-1533-4CD9-B51D-5FAA0416FD70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering.ApplicationService", "src\Host\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering.ApplicationService\Tnosc.Shop.Server.Module.Ordering.ApplicationService.csproj", "{20724344-1533-4CD9-B51D-5FAA0416FD70}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering.DomainModel", "src\Host\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.DomainModel\Tnosc.Shop.Sever.Module.Ordering.DomainModel.csproj", "{A3837E00-C344-4421-9E50-5F23EAD37037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering.DomainModel", "src\Host\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering.DomainModel\Tnosc.Shop.Server.Module.Ordering.DomainModel.csproj", "{A3837E00-C344-4421-9E50-5F23EAD37037}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering.Persistence", "src\Host\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.Persistence\Tnosc.Shop.Sever.Module.Ordering.Persistence.csproj", "{63AEAAF7-1ED3-4961-AC90-8716EB92CBA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering.Persistence", "src\Host\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering.Persistence\Tnosc.Shop.Server.Module.Ordering.Persistence.csproj", "{63AEAAF7-1ED3-4961-AC90-8716EB92CBA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{DF8BC60D-0B2D-4A26-B8B5-43430C45EE1B}"
 EndProject
@@ -95,9 +95,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{BC2D57A9-02D5-4FD7-8EB0-C1699FE18AC4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Payment", "src\Host\Modules\Payment\Tnosc.Shop.Sever.Module.Payment\Tnosc.Shop.Sever.Module.Payment.csproj", "{72CC43D9-B773-41CA-A6C9-92A2F711DF40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Payment", "src\Host\Modules\Payment\Tnosc.Shop.Server.Module.Payment\Tnosc.Shop.Server.Module.Payment.csproj", "{72CC43D9-B773-41CA-A6C9-92A2F711DF40}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Payment.ApplicationServcie", "src\Host\Modules\Payment\Tnosc.Shop.Sever.Module.Payment.ApplicationServcie\Tnosc.Shop.Sever.Module.Payment.ApplicationServcie.csproj", "{1AD0B26C-3649-4832-AFB5-CE92DB7BE000}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Payment.ApplicationServcie", "src\Host\Modules\Payment\Tnosc.Shop.Server.Module.Payment.ApplicationServcie\Tnosc.Shop.Server.Module.Payment.ApplicationServcie.csproj", "{1AD0B26C-3649-4832-AFB5-CE92DB7BE000}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCore", "ApplicationCore", "{E1377715-51F4-488E-A2F7-0A0F805F0B14}"
 EndProject
@@ -105,13 +105,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{83AC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notification", "{EBD94ECA-B60D-4E90-BE75-8DB82AF002FA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Notification", "src\Host\Modules\Notification\Tnosc.Shop.Sever.Module.Notification\Tnosc.Shop.Sever.Module.Notification.csproj", "{053D6AE0-A0F0-4333-81CA-34BD057CE5F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Notification", "src\Host\Modules\Notification\Tnosc.Shop.Server.Module.Notification\Tnosc.Shop.Server.Module.Notification.csproj", "{053D6AE0-A0F0-4333-81CA-34BD057CE5F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Notification.ApplicationService", "src\Host\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.ApplicationService\Tnosc.Shop.Sever.Module.Notification.ApplicationService.csproj", "{71179741-EFF6-43CC-A975-CBB2DC384B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Notification.ApplicationService", "src\Host\Modules\Notification\Tnosc.Shop.Server.Module.Notification.ApplicationService\Tnosc.Shop.Server.Module.Notification.ApplicationService.csproj", "{71179741-EFF6-43CC-A975-CBB2DC384B47}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Notification.DomainModel", "src\Host\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.DomainModel\Tnosc.Shop.Sever.Module.Notification.DomainModel.csproj", "{27C60FD0-EE9E-4F88-9A7D-78C0B046CFE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Notification.DomainModel", "src\Host\Modules\Notification\Tnosc.Shop.Server.Module.Notification.DomainModel\Tnosc.Shop.Server.Module.Notification.DomainModel.csproj", "{27C60FD0-EE9E-4F88-9A7D-78C0B046CFE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Notification.Infrastructure", "src\Host\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.Infrastructure\Tnosc.Shop.Sever.Module.Notification.Infrastructure.csproj", "{54135F49-A008-42A8-926F-FA5441E0D35C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Notification.Infrastructure", "src\Host\Modules\Notification\Tnosc.Shop.Server.Module.Notification.Infrastructure\Tnosc.Shop.Server.Module.Notification.Infrastructure.csproj", "{54135F49-A008-42A8-926F-FA5441E0D35C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCore", "ApplicationCore", "{F2980D5E-ABD3-4E83-A611-69F226E985F2}"
 EndProject
@@ -121,15 +121,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ba
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{3B3BEAF4-EA3F-4FD7-92AE-C4DE1B159222}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Catalog.UnitTests", "test\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.UnitTests\Tnosc.Shop.Sever.Module.Catalog.UnitTests.csproj", "{D7595242-E90D-48A8-8D8F-2A268BFF13B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog.UnitTests", "test\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog.UnitTests\Tnosc.Shop.Server.Module.Catalog.UnitTests.csproj", "{D7595242-E90D-48A8-8D8F-2A268BFF13B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Identity.UnitTests", "test\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.UnitTests\Tnosc.Shop.Sever.Module.Identity.UnitTests.csproj", "{A2276A6A-5F90-4CCB-B1F6-EE7A7CA7A7DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity.UnitTests", "test\Modules\Identity\Tnosc.Shop.Server.Module.Identity.UnitTests\Tnosc.Shop.Server.Module.Identity.UnitTests.csproj", "{A2276A6A-5F90-4CCB-B1F6-EE7A7CA7A7DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Notification.UnitTests", "test\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.UnitTests\Tnosc.Shop.Sever.Module.Notification.UnitTests.csproj", "{ABCA490E-52CE-417C-A5BD-86AA09787730}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Notification.UnitTests", "test\Modules\Notification\Tnosc.Shop.Server.Module.Notification.UnitTests\Tnosc.Shop.Server.Module.Notification.UnitTests.csproj", "{ABCA490E-52CE-417C-A5BD-86AA09787730}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Ordering.UnitTests", "test\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.UnitTests\Tnosc.Shop.Sever.Module.Ordering.UnitTests.csproj", "{D910473B-079A-4C05-B834-E2442C628700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering.UnitTests", "test\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering.UnitTests\Tnosc.Shop.Server.Module.Ordering.UnitTests.csproj", "{D910473B-079A-4C05-B834-E2442C628700}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Sever.Module.Payment.UnitTests", "test\Modules\Payment\Tnosc.Shop.Sever.Module.Payment.UnitTests\Tnosc.Shop.Sever.Module.Payment.UnitTests.csproj", "{A5E6F435-1244-47D1-A634-D6BDACF567B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Payment.UnitTests", "test\Modules\Payment\Tnosc.Shop.Server.Module.Payment.UnitTests\Tnosc.Shop.Server.Module.Payment.UnitTests.csproj", "{A5E6F435-1244-47D1-A634-D6BDACF567B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{78A5D8F4-5009-4108-AFE1-7966773C8BDE}"
 EndProject
@@ -141,17 +141,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{47351D4D-A17D-4202-9BE7-5C985E47D382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Server.Module.Basket.ArchitectureTests", "test\Modules\Basket\Tnosc.Shop.Server.Module.Basket.ArchitectureTests\Tnosc.Shop.Server.Module.Basket.ArchitectureTests.csproj", "{C632EEBC-C8D5-4B07-A3C1-E8EB5A1D039D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Basket.ArchitectureTests", "test\Modules\Basket\Tnosc.Shop.Server.Module.Basket.ArchitectureTests\Tnosc.Shop.Server.Module.Basket.ArchitectureTests.csproj", "{C632EEBC-C8D5-4B07-A3C1-E8EB5A1D039D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests", "test\Modules\Catalog\Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests\Tnosc.Shop.Sever.Module.Catalog.ArchitectureTests.csproj", "{F8CA5596-D20E-4E07-8745-F2FFA9FA2A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Catalog.ArchitectureTests", "test\Modules\Catalog\Tnosc.Shop.Server.Module.Catalog.ArchitectureTests\Tnosc.Shop.Server.Module.Catalog.ArchitectureTests.csproj", "{F8CA5596-D20E-4E07-8745-F2FFA9FA2A8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Identity.ArchitectureTests", "test\Modules\Identity\Tnosc.Shop.Sever.Module.Identity.ArchitectureTests\Tnosc.Shop.Sever.Module.Identity.ArchitectureTests.csproj", "{EE86FD88-9085-4233-BC12-1F16F2B3A0CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Identity.ArchitectureTests", "test\Modules\Identity\Tnosc.Shop.Server.Module.Identity.ArchitectureTests\Tnosc.Shop.Server.Module.Identity.ArchitectureTests.csproj", "{EE86FD88-9085-4233-BC12-1F16F2B3A0CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Notification.ArchitectureTests", "test\Modules\Notification\Tnosc.Shop.Sever.Module.Notification.ArchitectureTests\Tnosc.Shop.Sever.Module.Notification.ArchitectureTests.csproj", "{DA80DC6C-C9BB-4F87-A320-2AB4AC77164E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Notification.ArchitectureTests", "test\Modules\Notification\Tnosc.Shop.Server.Module.Notification.ArchitectureTests\Tnosc.Shop.Server.Module.Notification.ArchitectureTests.csproj", "{DA80DC6C-C9BB-4F87-A320-2AB4AC77164E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests", "test\Modules\Ordering\Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests\Tnosc.Shop.Sever.Module.Ordering.ArchitectureTests.csproj", "{06108276-9E25-4E5A-B2AF-8F5A20F7F630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Ordering.ArchitectureTests", "test\Modules\Ordering\Tnosc.Shop.Server.Module.Ordering.ArchitectureTests\Tnosc.Shop.Server.Module.Ordering.ArchitectureTests.csproj", "{06108276-9E25-4E5A-B2AF-8F5A20F7F630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.Sever.Module.Payment.ArchitectureTests", "test\Modules\Payment\Tnosc.Shop.Sever.Module.Payment.ArchitectureTests\Tnosc.Shop.Sever.Module.Payment.ArchitectureTests.csproj", "{8A3662A1-CB31-46AE-AC65-6B661AD124BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tnosc.Shop.Server.Module.Payment.ArchitectureTests", "test\Modules\Payment\Tnosc.Shop.Server.Module.Payment.ArchitectureTests\Tnosc.Shop.Server.Module.Payment.ArchitectureTests.csproj", "{8A3662A1-CB31-46AE-AC65-6B661AD124BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{E4EEC98A-F0C3-4828-9E96-CF271B5C1540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tnosc.Shop.BFF", "src\Gateway\Tnosc.Shop.BFF\Tnosc.Shop.BFF.csproj", "{C3135DAB-7880-4720-9E5C-BD1341E04ED3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -327,6 +331,10 @@ Global
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -404,6 +412,8 @@ Global
 		{DA80DC6C-C9BB-4F87-A320-2AB4AC77164E} = {62EB3F2F-D76C-47BD-A39C-B6F62EA8C098}
 		{06108276-9E25-4E5A-B2AF-8F5A20F7F630} = {6DA12D5F-BEA0-433C-AF4C-4C9B051828AC}
 		{8A3662A1-CB31-46AE-AC65-6B661AD124BD} = {47351D4D-A17D-4202-9BE7-5C985E47D382}
+		{E4EEC98A-F0C3-4828-9E96-CF271B5C1540} = {C6F3E231-813F-41CB-98FA-91E4B5AF5453}
+		{C3135DAB-7880-4720-9E5C-BD1341E04ED3} = {E4EEC98A-F0C3-4828-9E96-CF271B5C1540}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {739B8EAF-509B-48A6-A9E7-62A9D33DFA1C}

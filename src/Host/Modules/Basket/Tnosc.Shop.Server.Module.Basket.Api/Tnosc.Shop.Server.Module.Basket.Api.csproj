@@ -11,8 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Carter" Version="8.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
-    <PackageReference Include="Tnosc.Components.Infrastructure.Api" Version="1.0.0-alpha" />
+    <PackageReference Include="Tnosc.Components.Infrastructure.Api" Version="1.0.4-alpha.3" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "tnosc.shop.bff": "StartDebugging",
+        "tnosc.Shop.Client.Host.Web": "StartDebugging",
+        "tnosc.shop.server.bootstrapper": "StartDebugging"
+      }
+    }
+  }
+}

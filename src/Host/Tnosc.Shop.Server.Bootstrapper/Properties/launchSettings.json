@@ -3,7 +3,7 @@
     "http": {
       "commandName": "Project",
       "launchBrowser": true,
-      //"launchUrl": "docs",
+      "launchUrl": "docs/v1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
@@ -13,17 +13,17 @@
     "https": {
       "commandName": "Project",
       "launchBrowser": true,
-      //"launchUrl": "docs",
+      "launchUrl": "docs/v1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7067;http://localhost:5203"
+      "applicationUrl": "https://localhost:5081;http://localhost:5080"
     },
     "IIS Express": {
       "commandName": "IISExpress",
       //"launchBrowser": true,
-      "launchUrl": "docs",
+      "launchUrl": "docs/v1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -31,7 +31,7 @@
     "Container (Dockerfile)": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/docs/v1",
       "environmentVariables": {
         "ASPNETCORE_HTTPS_PORTS": "5081",
         "ASPNETCORE_HTTP_PORTS": "5080"

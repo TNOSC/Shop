@@ -26,7 +26,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Tnosc.Components.Abstractions.Module;
-using Tnosc.Shop.Server.Module.Basket.Api;
 
 namespace Tnosc.Shop.Srever.Module.Basket;
 
@@ -45,5 +44,5 @@ public class BasketModule : IModule
     }
 
     /// <inheritdoc />
-    public void Use(IApplicationBuilder app) => _ = app.UseApiEndpoints(Name);
+    public void Use(WebApplication app) { }
 }
